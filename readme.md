@@ -28,12 +28,12 @@ Example: http://cryptohopper-ticker-frontend.us-east-1.elasticbeanstalk.com/v1/c
 
 ---
 
-#Application walk-through
+# Application walk-through
 ## Assumptions made
 * The implementation for each exchange can be different (eg: different url, different data format).
 * The application can support different algorithms/logic/indicators to calculate the signal.
 
-##Folder structure
+## Folder structure
     .
     └──  app                   # application folder
       ├── config               # server config and routes 
@@ -43,7 +43,7 @@ Example: http://cryptohopper-ticker-frontend.us-east-1.elasticbeanstalk.com/v1/c
       ├── indicators           # contains the implementation for all the indicators supported
       |  └── sma               # sma implementation
       └── server               # http server initialization
-##Exchanges
+## Exchanges
 
 The current implementation supports only coinbase, since that was the only url provided, but this can be easily expanded.
 
